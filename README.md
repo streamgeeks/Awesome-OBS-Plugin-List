@@ -729,3 +729,8 @@ Connecting OBS and Zoom can significantly increase your video and audio quality 
 2.	OBS has a default Virtual Camera feature which allows you to send video to other applications using a virtual webcam.
 3.	OBS does not have a default virtual audio cable solution and therefore a virtual audio cable driver is necessary to send both audio and video from OBS to other applications like Zoom.
 
+ ## Contributing
+- At least Tweet-sized documentation must be provided, so people can understand what it is.
+- No Ads, Watermarks, or similar on the contributed resources, to keep it clean for everyone.
+- You can link to your pages and add explicit credit on documentation of such resources.
+- Basically the resources contributed here must be clean, if you want to link your page and charge for premium resources there, is Ok, but resources on this repo must be clean.
