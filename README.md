@@ -16,7 +16,7 @@ After sorting through dozens of OBS Studio plugins, the following list has been 
     - [**Source Docks**](#source-dock-plugin) - [Github Link](https://github.com/exeldro/obs-source-dock)This plugin allows you to dock any source inside the OBS interface. This is a great way to quickly view and control media inside of the OBS interface. 
     - [**Source Record**](#source-record-plugin) - [Github Link](https://github.com/exeldro/obs-source-record)This plugin creates a filter you can use to record a specific source independently from the main video recording. 
     - [**Replay Source**](#replay-source) - [Github Link](https://github.com/exeldro/obs-replay-source)This plugin allows you to create live instant replays using OBS. It allows you to apply a filter to any given source which will record the video for instant playback in your computer memory. This plugin offers the ability to use hotkeys and play video back in slow motion. This is a great plug-in for sports productions. 
-    - [**NewTek NDI® Integration**]() - [Github Link](https://github.com/Palakis/obs-ndi)This plugin allows you to connect OBS to NDI® video sources in a couple different ways. First you can bring NDI® video sources on your network into OBS by adding NDI® as a source. Additionally you can output video from your OBS production as an NDI® source on your network. And finally, you can add an NDI® output filter on any source. This allows you to output individual sources as NDI® outputs on your network (more on NDI® in an upcoming chapter).
+    - [**NewTek NDI® Integration**](newtek-ndi®-integration) - [Github Link](https://github.com/Palakis/obs-ndi)This plugin allows you to connect OBS to NDI® video sources in a couple different ways. First you can bring NDI® video sources on your network into OBS by adding NDI® as a source. Additionally you can output video from your OBS production as an NDI® source on your network. And finally, you can add an NDI® output filter on any source. This allows you to output individual sources as NDI® outputs on your network (more on NDI® in an upcoming chapter).
 - Plugins for Audio :headphones:
     - [**OBS Music Edition**]() - This is a custom build of OBS which is designed for audio producers. This build of OBS is compatible with VST3 plugins which are used by top music producers around the world. 
     - [**Audio Monitor**](#audio-monitor-plugin) - [Github Link](https://github.com/exeldro/obs-audio-monitor)This plugin allows you to use a filter to route audio to any virtual or physical audio output available on your computer. This is often used to send an audio output from OBS to software such as Zoom. 
@@ -364,6 +364,47 @@ There do not appear to be any other OBS-based alternatives to Replay Source othe
 2.	Its operation is seamless and straightforward once you get everything set up. 
 3.	Just be aware that getting everything configured may take some time.
 
+
+## NEWTEK NDI® INTEGRATION
+
+In 2016, a developer by the username of Palakis released a plugin for OBS that added support for NDI. NDI is a powerful IP video production standard that allows users to send and receive video over a network. A popular use for NDI, is to easily use a smartphone as a webcam, but the possible use cases for IP video with OBS are wide reaching. The plugin offers users NDI input and output capabilities which allow you to connect multiple OBS systems together including hundreds of other NDI enabled hardware and software solutions. As of early 2021, 1.5 million users have downloaded the NDI plugin for OBS. 
+
+It’s worth noting that OBS will never have native support for NDI. All code in the OBS project must be 100% open source. NDI itself is royalty-free, but the code is not open source. Therefore, the plugin provides a legal way for OBS to interface with NDI. So why is OBS so important to the NDI ecosystem overall? NDI essentially opens up thousands of new video input and output opportunities for OBS users. Because OBS is free, it has become a go-to solution for creating NDI video and sending it out into a LAN.
+
+How does NDI® work in OBS?  
+Once you have installed OBS and the NDI plugin you can use NDI in three ways. First, you can set up OBS to send the preview and output screens in the production software as NDI outputs. This is an easy way to capture and distribute your OBS content via NDI. The second option is to bring NDI sources into your OBS production. This is useful for connecting multiple OBS software instances, or using OBS with some of the other NDI tools. Third, you can add an OBS filter to any source or scene in OBS to make that individual source/scene an NDI output. OBS can be used in this way to output complex scenes with multiple sources via NDI.
+
+  
+
+
+<h2 align = "center" ><img src="./img/img14.png" ><h2>
+<h4 align = "center"><b>NDI® settings inside OBS.</b></h4>
+
+**Example: Using OBS as an NDI® output**
+One example of using an NDI output with OBS is a dual computer set-up. Many people have multiple computers and they want to stream, record, and play videogames at the same time. In many cases, one computer is not powerful enough to play computer games and live stream at the same time. So it’s possible to have one computer for playing video games, and another for live streaming and recording the content. 
+
+ 
+**Two computers connected with NDI®.**
+Connecting two computers with OBS is very easy with NDI. One computer is set up to output NDI and the other simply uses NDI as an input source. As long as both computers are on the same local area network (LAN), the video should be crystal clear and reliable with minimal latency. Another popular use of OBS is to output the production to another computer as a display. In this way, you can use all the tools in OBS to create a dynamic presentation with live video and data sources. The entire production can run on a Mac, PC, or Linux computer and then distributed across the network to another computer where you want the video to be displayed. 
+Example: Using NDI® as an input
+Perhaps the most popular way to use NDI as an input in OBS is with a smartphone. NDI offers two smartphone applications which can be used to send video in two different ways. NDI Camera turns a smartphone into an NDI camera. NDI Capture captures the screen of a smartphone and makes the video available as NDI. NDI Capture is ideal for mobile video gaming or presentations that happen on a smartphone. NDI Camera is great for sharing live camera video with OBS over a LAN. 
+
+ 
+
+<h2 align = "center" ><img src="./img/img15.png" ><h2>
+<h4 align = "center"><b>NDI Camera used with a video production computer running OBS.</b></h4>
+
+There are multiple benefits to using an NDI Camera instead of a regular webcam. First of all, smartphones are popular and they feature some of the best camera technology available to consumers. Secondly, the NDI® Camera solution uses WiFi and doesn’t  take up a USB port. Therefore, NDI® Camera can be used untethered from the computer it’s used with to provide new and interesting viewpoints. 
+Mobile phones can be used to send screen captures with NDI® Capture too. While mobile phones are great for playing video games and making presentations, they can be clumsy when used with multimedia applications such as live streaming and video production. Therefore, NDI provides an easy way to incorporate mobile phone connectivity with larger live video productions. 
+Example: Using NDI® filters
+OBS is organized into scenes which are used to create various layouts in an organized manner. Each scene is made up of sources which are multimedia elements that might  include an image, text, a video, or an NDI source among other options. In this way, OBS users can create dynamic scenes with an unlimited number of sources and switch between them as their live video productions are being streamed or recorded. 
+
+
+<h2 align = "center" ><img src="./img/img16.png" ><h2>
+<h4 align = "center"><b>Filters area of OBS.</b></h4>
+
+You can apply filters to an entire scene or an individual source. They can be used to sharpen a source, change the color, apply a color key and much more. Once the NDI plugin is installed with OBS, a new filter called “Dedicated NDI® Output” becomes available as a filter. This is a great way to create a dedicated NDI® output beyond the Program Output of the software. You can add a filter to any source or scene by right clicking the scene and choosing the Filters option. Once the filter has been added, you can name your NDI output. This is the name that will be discoverable by other NDI solutions on your LAN. 
+OBS is a powerful tool for NDI users of any experience level. From an accessibility standpoint, OBS is free and it supports all major computer systems. While OBS is not necessarily a tool found in high-end television studios, it’s the world’s most popular video production software. You should consider using OBS to create dynamic NDI content. 
 
 
 ## AUDIO MONITOR PLUGIN
